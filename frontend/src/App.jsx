@@ -1,10 +1,9 @@
-import LoginPage from './pages/Pagina_Login/pagina_login.jsx';
+import {Outlet} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      {/* <RegisterPage /> */}
-      <LoginPage />
+      <Outlet />
     </div>
   );
 }

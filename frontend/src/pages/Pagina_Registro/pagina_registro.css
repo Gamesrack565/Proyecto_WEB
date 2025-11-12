@@ -1,18 +1,90 @@
+/* * Sobrescribe el fondo oscuro de index.css 
+ * y le da el fondo blanco de tu diseño.
+ */
 .auth-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  color: white;
   width: 100%;
   max-width: 400px;
   margin: 2rem auto;
+  
+  /* --- ESTILOS VISUALES DEL PDF --- */
+  background-color: #ffffff; /* Fondo blanco */
+  color: #000000; /* Texto oscuro */
+  border-radius: 16px; /* Bordes redondeados (opcional, pero se ve bien) */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave (opcional) */
 }
 
-/* ... (pega el resto de los estilos que te di antes) ... */
+/* Estilo para el ícono de usuario */
+.user-icon {
+  width: 80px; /* Tamaño del círculo */
+  height: 80px;
+  border-radius: 50%; /* Lo hace un círculo */
+  border: 2px solid #0000FF; /* Borde azul como en el PDF */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
 
-.btn-secondary {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
+.user-icon svg {
+  width: 48px; /* Tamaño del SVG de adentro */
+  height: 48px;
+  stroke: #0000FF; /* Color del SVG azul */
+}
+
+/* Estilos para el formulario */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem; /* Espacio más pequeño entre label e input */
+}
+
+.auth-form label {
+  font-size: 0.9rem;
+  font-weight: 600; /* Letra un poco más gruesa */
+  margin-bottom: 0.25rem; /* Espacio debajo de la etiqueta */
+}
+
+/* Estilos para los campos de texto (input) */
+.auth-form input {
+  width: 100%;
+  padding: 1rem; /* Más altos */
+  border: 1px solid transparent; /* Sin borde visible */
+  border-radius: 25px; /* ¡Muy redondeados como en el PDF! */
+  box-sizing: border-box; 
+  
+  /* --- ESTILOS VISUALES DEL PDF --- */
+  background-color: #E6E6FA; /* Color lavanda/morado claro */
+  color: #333; /* Texto de placeholder oscuro */
+  font-weight: 500;
+}
+
+.auth-form input::placeholder {
+  color: #555; /* Color del placeholder */
+}
+
+/* Estilos para el botón principal */
+.btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 25px; /* ¡Muy redondeados como en el PDF! */
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1.5rem; /* Más espacio arriba */
+  font-size: 1rem;
+}
+
+.btn-primary {
+  /* --- ESTILOS VISUALES DEL PDF --- */
+  background-color: #0000FF; /* Azul sólido */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0000CC; /* Azul un poco más oscuro al pasar el mouse */
 }
