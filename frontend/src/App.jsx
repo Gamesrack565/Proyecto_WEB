@@ -1,9 +1,10 @@
-import RegisterPage from './pages/Pagina_Registro/pagina_registro'; // <-- ¡Importación más limpia!
+import LoginPage from './pages/Pagina_Login/pagina_login.jsx';
 
 function App() {
   return (
     <div className="App">
-      <RegisterPage />
+      {/* <RegisterPage /> */}
+      <LoginPage />
     </div>
   );
 }
