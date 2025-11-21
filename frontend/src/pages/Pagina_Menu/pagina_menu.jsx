@@ -1,5 +1,5 @@
 import React from 'react';
-import 'pagina_menu.css';
+import './pagina_menu.css';
 
 const pagina_menu = () => {
     return (
@@ -29,4 +29,4 @@ const pagina_menu = () => {
     );
 };
 
-export default pagina_menu;
+export default pagina_menuenu;
