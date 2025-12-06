@@ -1,9 +1,9 @@
-import RegisterPage from './pages/Pagina_Registro/pagina_registro'; // <-- ¡Importación más limpia!
+import {Outlet} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <RegisterPage />
+      <Outlet />
     </div>
   );
 }
